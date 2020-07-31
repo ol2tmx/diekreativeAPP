@@ -18,7 +18,7 @@ export class ChurchapiService {
   public login(username, password){
     var params = new HttpParams()
                     .set('username',username)
-                    //.set('password',password)
+                    .set('password',password)
     return this.sendRestPostRequest('login',params);
   }
 
@@ -38,8 +38,9 @@ export class ChurchapiService {
 
   private sendRestPostRequest(request:string,params:HttpParams){
     
-    
-  return this.httpClient.post(this.REST_API_SERVER+'/'+request,{},{params});
+  console.log(this.REST_API_SERVER+'/'+request+" "+params)
+  //return this.httpClient.post(this.REST_API_SERVER+'/'+request,{},{params});
+  return this.httpClient.post("http://ec2-18-184-42-189.eu-central-1.compute.amazonaws.com/api/login?username=admin&password=admin",{});
   }
 
 

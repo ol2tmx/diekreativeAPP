@@ -2,8 +2,6 @@ import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 import { ChurchapiService } from './churchapi.service';
-import { HttpClient } from '@angular/common/http';
-
 
 export const loginResponse = {"data":{"status":"success","message":"login.success","personId":1,"location":"?=churchhome"}};
 

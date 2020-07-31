@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="start">loginModal</ion-title>
+    <ion-button slot="end" (click)="dismiss()">zurück</ion-button>
+    &nbsp;&nbsp;
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Nutzer</ion-label>
+    <ion-input [(ngModel)]="username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Passwort</ion-label>
+    <ion-input [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <ion-button (click)="login()" expand="block">Login</ion-button>
+</ion-content>

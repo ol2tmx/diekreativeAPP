@@ -10,6 +10,7 @@ import { FirebaseX } from "@ionic-native/firebase-x/ngx";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChurchapiService } from './connectors/churchapi.service';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { AppComponent } from './app.component';
     StatusBar,
     SplashScreen,
     FirebaseX,
+    ChurchapiService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     HttpClientModule,
   ],
