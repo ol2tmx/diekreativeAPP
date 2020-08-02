@@ -32,8 +32,8 @@ const routes: Routes = [
         loadChildren: () => import('../settings/settings.module').then( m => m.SettingsPageModule)
       },
       {
-        path: 'dummytab',
-        loadChildren: () => import('../dummytab/dummytab.module').then( m => m.DummytabPageModule)
+        path: 'predigten-audio',
+        loadChildren: () => import('../predigten-audio/predigten-audio.module').then( m => m.PredigtenAudioPageModule)
       },
       {
         path: '',
