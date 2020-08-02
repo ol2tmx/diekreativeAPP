@@ -9,6 +9,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class Tab1Page {
 
+  hero = "Testhero";
   constructor(public modalController: ModalController) {}
 
   public async presentModal() {
@@ -20,6 +21,9 @@ export class Tab1Page {
     return await modal.present();
   }
 
+  mymethod(){
+    alert();
+  }
   /*presentModal(){
     console.log("t3st")
   }*/

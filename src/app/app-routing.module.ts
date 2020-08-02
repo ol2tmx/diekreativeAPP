@@ -11,9 +11,35 @@ const routes: Routes = [
     loadChildren: () => import('./login-modal/login-modal.module').then( m => m.LoginModalPageModule)
   },
   {
-    path: 'lifegroups',
-    loadChildren: () => import('./lifegroups/lifegroups.module').then( m => m.LifegroupsPageModule)
+    path: 'tab4',
+    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },
+  {
+    path: 'tab5',
+    loadChildren: () => import('./tab5/tab5.module').then( m => m.Tab5PageModule)
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
+  },
+  {
+    path: 'predigten-video',
+    loadChildren: () => import('./predigten-video/predigten-video.module').then( m => m.PredigtenVideoPageModule)
+  },
+  {
+    path: 'predigten-audio',
+    loadChildren: () => import('./predigten-audio/predigten-audio.module').then( m => m.PredigtenAudioPageModule)
+  },
+  {
+    path: 'predigten-audio-details',
+    loadChildren: () => import('./predigten-audio-details/predigten-audio-details.module').then( m => m.PredigtenAudioDetailsPageModule)
+  },
+  {
+    path: 'dummytab',
+    loadChildren: () => import('./dummytab/dummytab.module').then( m => m.DummytabPageModule)
   }
+
+
 ];
 @NgModule({
   imports: [
