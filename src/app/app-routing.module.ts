@@ -9,7 +9,19 @@ const routes: Routes = [
   {
     path: 'login-modal',
     loadChildren: () => import('./login-modal/login-modal.module').then( m => m.LoginModalPageModule)
+  },  {
+    path: 'tab4',
+    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },
+  {
+    path: 'tab5',
+    loadChildren: () => import('./tab5/tab5.module').then( m => m.Tab5PageModule)
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
   }
+
 ];
 @NgModule({
   imports: [
