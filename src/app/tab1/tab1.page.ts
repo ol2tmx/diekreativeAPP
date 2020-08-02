@@ -9,7 +9,12 @@ import { ModalController } from '@ionic/angular';
 })
 export class Tab1Page {
 
+  hero = "Testhero";
   constructor(public modalController: ModalController) {}
+
+// Play audio
+//
+
 
   public async presentModal() {
     const modal = await this.modalController.create({
@@ -20,6 +25,12 @@ export class Tab1Page {
     return await modal.present();
   }
 
+
+
+  mymethod(){
+    //this.playAudio("file.mp3");
+    alert("Hallo");
+  }
   /*presentModal(){
     console.log("t3st")
   }*/
