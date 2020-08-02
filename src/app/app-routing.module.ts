@@ -33,7 +33,11 @@ const routes: Routes = [
   {
     path: 'predigten-audio-details',
     loadChildren: () => import('./predigten-audio-details/predigten-audio-details.module').then( m => m.PredigtenAudioDetailsPageModule)
+  },  {
+    path: 'dummytab',
+    loadChildren: () => import('./dummytab/dummytab.module').then( m => m.DummytabPageModule)
   }
+
 
 ];
 @NgModule({

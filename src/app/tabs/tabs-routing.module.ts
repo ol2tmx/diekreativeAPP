@@ -28,6 +28,14 @@ const routes: Routes = [
         loadChildren: () => import('../tab5/tab5.module').then( m => m.Tab5PageModule)
       },
       {
+        path: 'settings',
+        loadChildren: () => import('../settings/settings.module').then( m => m.SettingsPageModule)
+      },
+      {
+        path: 'dummytab',
+        loadChildren: () => import('../dummytab/dummytab.module').then( m => m.DummytabPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
