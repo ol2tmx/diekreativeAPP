@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { LoginModalPage } from '../login-modal/login-modal.page';
 import { ModalController } from '@ionic/angular';
-import { HTTP } from '@ionic-native/http/ngx';
+import { HttpClient } from "@angular/common/http";
 import * as xml2js from "xml2js";
 import { NewsRss } from './news-rss';
 
@@ -12,7 +12,7 @@ import { NewsRss } from './news-rss';
 })
 export class Tab1Page {
 RssData: NewsRss;
-  constructor(public modalController: ModalController, private http: HTTP) {
+  constructor(public modalController: ModalController, private http: HttpClient) {
     this.GetRssFeedData()
   }
   
@@ -39,7 +39,7 @@ RssData: NewsRss;
       responseType: "text"
     };
     this.http
-      .get("https://diekreative.org/feed/",{},{})
+      .get("https://diekreative.org/feed/podcast/").toPromise()
       .then(data => {
         let parseString = xml2js.parseString;
         console.log("parse blubb"+JSON.stringify(data));
@@ -51,6 +51,8 @@ RssData: NewsRss;
         console.log("parse err + " + JSON.stringify(error));
       });
   }
+
+  
 
   /*presentModal(){
     console.log("t3st")
