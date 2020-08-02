@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'login-modal',
     loadChildren: () => import('./login-modal/login-modal.module').then( m => m.LoginModalPageModule)
+  },
+  {
+    path: 'lifegroups',
+    loadChildren: () => import('./lifegroups/lifegroups.module').then( m => m.LifegroupsPageModule)
   }
 ];
 @NgModule({
