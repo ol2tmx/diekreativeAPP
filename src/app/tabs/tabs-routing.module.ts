@@ -36,6 +36,10 @@ const routes: Routes = [
         loadChildren: () => import('../predigten-audio/predigten-audio.module').then( m => m.PredigtenAudioPageModule)
       },
       {
+        path: 'predigten-audio-details',
+        loadChildren: () => import('../predigten-audio-details/predigten-audio-details.module').then( m => m.PredigtenAudioDetailsPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
