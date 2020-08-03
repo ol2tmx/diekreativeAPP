@@ -7,6 +7,7 @@ import { FirebaseX } from '@ionic-native/firebase-x/ngx';
 
 import { ModalController } from '@ionic/angular';
 import { LoginModalPage } from './login-modal/login-modal.page';
+import { FeedsService } from './communications/feeds.service';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,8 @@ export class AppComponent {
     private statusBar: StatusBar,
     private firebaseX: FirebaseX,
     private menu: MenuController,
-    public modalController: ModalController
+    public modalController: ModalController,
+    private feeds: FeedsService
   ) {
     this.initializeApp();
   }
