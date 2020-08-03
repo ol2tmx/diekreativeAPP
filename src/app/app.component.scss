@@ -2,23 +2,26 @@
     --width: 500px;
   }
 
+  ion-menu-button {
+    position: absolute; top: 16px; right: 11px;
+  }
+
+.menuheader_gast {
+  position: absolute; top: 16px; right: 16px;
+}
+
   .diekreativemenu {
-    top: 30px;
+    top: 55px;
     left: 0px;
     width: 400px;
     height: 600px;
-    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 1px 7px 10px #00000029;
     opacity: 1;
   }
+
+  
 ion-menu > ion-content > ion-list > ion-item {
-  top: 30px;
-  left: 0px;
-  width: 400px;
-  height: 40px;
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  opacity: 1;
+  border-bottom: 1px solid grey !important;
 }
+
 
