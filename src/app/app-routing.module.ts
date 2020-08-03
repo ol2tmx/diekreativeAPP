@@ -41,7 +41,15 @@ const routes: Routes = [
   {
     path: 'lifegroups',
     loadChildren: () => import('./lifegroups/lifegroups.module').then( m => m.LifegroupsPageModule)
+  },  {
+    path: 'calender-prayer-room',
+    loadChildren: () => import('./calender-prayer-room/calender-prayer-room.module').then( m => m.CalenderPrayerRoomPageModule)
+  },
+  {
+    path: 'test-site',
+    loadChildren: () => import('./test-site/test-site.module').then( m => m.TestSitePageModule)
   }
+
 
 
 ];
