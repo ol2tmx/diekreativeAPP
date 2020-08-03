@@ -1,9 +1,9 @@
 
 <ion-app>
   <ion-buttons slot="start">
-    <ion-menu-button > </ion-menu-button>
+    <ion-menu-button position="absolute" side="end"> </ion-menu-button>
   </ion-buttons>
-  <ion-menu side="end" menuId="first" contentId="main" class="diekreativemenu">
+  <ion-menu position="absolute" side="end" menuId="first" contentId="main" class="diekreativemenu">
    <!--
     <ion-header>
       <ion-toolbar color="primary">
@@ -35,6 +35,15 @@
           <ion-item-divider> <ion-item><ion-icon name="share-social-sharp"></ion-icon>&nbsp;&nbsp;ERlebt</ion-item></ion-item-divider>
           <ion-item-divider> <ion-item routerLink="/tabs/tab4"><ion-icon name="mail-sharp"></ion-icon>&nbsp;&nbsp;Kontakt</ion-item> </ion-item-divider>       
         </ion-list>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4"><ion-icon name="earth"></ion-icon></ion-col>
+            <ion-col size="4"><ion-icon name="F_icon"></ion-icon> </ion-col>
+            <ion-col size="4"><ion-icon name="g5"></ion-icon></ion-col>
+            <ion-col size="4"><ion-icon name="20160929161413!Instagram_logo_2016"></ion-icon></ion-col>
+          </ion-row>
+        </ion-grid>   
     </ion-content>
   </ion-menu>
   <ion-router-outlet id="main"></ion-router-outlet>
