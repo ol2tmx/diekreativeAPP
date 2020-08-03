@@ -1,3 +1,24 @@
 .my-custom-menu {
     --width: 500px;
   }
+
+  .diekreativemenu {
+    top: 20px;
+    left: 0px;
+    width: 400px;
+    height: 600px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 1px 7px 10px #00000029;
+    opacity: 1;
+  }
+ion-menu > ion-content > ion-list > ion-item {
+  top: 20px;
+  left: 0px;
+  width: 400px;
+  height: 40px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
