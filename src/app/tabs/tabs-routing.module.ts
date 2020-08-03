@@ -40,6 +40,10 @@ const routes: Routes = [
         loadChildren: () => import('../predigten-audio-details/predigten-audio-details.module').then( m => m.PredigtenAudioDetailsPageModule)
       },
       {
+        path: 'lifegroups',
+        loadChildren: () => import('../lifegroups/lifegroups.module').then( m => m.LifegroupsPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
