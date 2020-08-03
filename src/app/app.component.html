@@ -1,25 +1,27 @@
 
 <ion-app>
   <ion-buttons slot="start">
-    <ion-menu-button > </ion-menu-button>
+    <ion-menu-button> </ion-menu-button>
   </ion-buttons>
-  <ion-menu side="end" menuId="first" contentId="main" class="diekreativemenu">
-   <!--
+  <ion-menu side="end" menuId="first" contentId="main">
+   <!--uneingeloggter status-->
     <ion-header>
-      <ion-toolbar color="primary">
-        <ion-button size="large" (click)="presentModal()">  <ion-icon name="person-circle-outline"></ion-icon>  <ion-title> Login</ion-title></ion-button>
-      </ion-toolbar>
+      <ion-buttons class="menuheader_gast">
+        <ion-button icon-only (click)="close()">
+            <ion-icon item-right name="close"></ion-icon>
+        </ion-button>
+    </ion-buttons>
        </ion-header>
-    <ion-content>
+    <ion-content class="diekreativemenu">
       <ion-list>
-        <ion-item-divider><ion-item><ion-icon name="key-sharp"></ion-icon>&nbsp;&nbsp;Login</ion-item></ion-item-divider>
-        <ion-item-divider><ion-item><ion-icon name="notifications-outline"></ion-icon>&nbsp;&nbsp;Mitteilungen</ion-item></ion-item-divider>
-        <ion-item-divider><ion-item><ion-icon name="mic-sharp"></ion-icon>&nbsp;&nbsp;Mediathek</ion-item></ion-item-divider>
-        <ion-item-divider><ion-item><ion-icon name="people-sharp"></ion-icon>&nbsp;&nbsp;Lifegroups</ion-item></ion-item-divider>
-        <ion-item-divider> <ion-item><ion-icon name="share-social-sharp"></ion-icon>&nbsp;&nbsp;ERlebt</ion-item></ion-item-divider>
-        <ion-item-divider> <ion-item><ion-icon name="mail-sharp"></ion-icon>&nbsp;&nbsp;Kontakt</ion-item> </ion-item-divider>       
+        <ion-item><ion-icon name="key-sharp"></ion-icon>&nbsp;&nbsp;Login</ion-item>
+        <ion-item><ion-icon name="notifications-outline"></ion-icon>&nbsp;&nbsp;Mitteilungen</ion-item>
+        <ion-item><ion-icon name="mic-sharp"></ion-icon>&nbsp;&nbsp;Mediathek</ion-item>
+        <ion-item><ion-icon name="people-sharp"></ion-icon>&nbsp;&nbsp;Lifegroups</ion-item>
+        <ion-item><ion-icon name="share-social-sharp"></ion-icon>&nbsp;&nbsp;ERlebt</ion-item>
+        <ion-item><ion-icon name="mail-sharp"></ion-icon>&nbsp;&nbsp;Kontakt</ion-item>
       </ion-list>
-    -->
+    <!-- eingeloggter Status
       <ion-header>
         <ion-toolbar color="primary">
           <ion-button size="large" (click)="presentModal()">  <ion-icon name="person-circle-outline"></ion-icon>  <ion-title> Username</ion-title></ion-button>
@@ -27,14 +29,14 @@
          </ion-header>
       <ion-content>
         <ion-list>
-          <ion-item-divider><ion-item><ion-icon name="person-circle"></ion-icon>&nbsp;&nbsp;Benutzer</ion-item></ion-item-divider>
-          <ion-item-divider><ion-item><ion-icon name="meeting_room-24px"></ion-icon>&nbsp;&nbsp;Türöffner</ion-item></ion-item-divider>
-          <ion-item-divider><ion-item><ion-icon name="notifications-outline"></ion-icon>&nbsp;&nbsp;Mitteilungen</ion-item></ion-item-divider>
-          <ion-item-divider><ion-item><ion-icon name="mic-sharp"></ion-icon>&nbsp;&nbsp;Mediathek</ion-item></ion-item-divider>
-          <ion-item-divider><ion-item><ion-icon name="people-sharp"></ion-icon>&nbsp;&nbsp;Lifegroups</ion-item></ion-item-divider>
-          <ion-item-divider> <ion-item><ion-icon name="share-social-sharp"></ion-icon>&nbsp;&nbsp;ERlebt</ion-item></ion-item-divider>
-          <ion-item-divider> <ion-item><ion-icon name="mail-sharp"></ion-icon>&nbsp;&nbsp;Kontakt</ion-item> </ion-item-divider>       
+          <ion-item><ion-icon name="person-circle"></ion-icon>&nbsp;&nbsp;Benutzer</ion-item>
+          <ion-item><ion-icon name="notifications-outline"></ion-icon>&nbsp;&nbsp;Mitteilungen</ion-item>
+          <ion-item><ion-icon name="mic-sharp"></ion-icon>&nbsp;&nbsp;Mediathek</ion-item>
+          <ion-item><ion-icon name="people-sharp"></ion-icon>&nbsp;&nbsp;Lifegroups</ion-item>
+           <ion-item><ion-icon name="share-social-sharp"></ion-icon>&nbsp;&nbsp;ERlebt</ion-item>
+           <ion-item><ion-icon name="mail-sharp"></ion-icon>&nbsp;&nbsp;Kontakt</ion-item>
         </ion-list>
+      -->  
     </ion-content>
   </ion-menu>
   <ion-router-outlet id="main"></ion-router-outlet>
