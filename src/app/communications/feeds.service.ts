@@ -9,7 +9,7 @@ import { HttpClient,  HttpErrorResponse, HttpHeaders } from "@angular/common/htt
 export class FeedsService {
   RssData: NewsRss;
 
-  PREDIGTEN_URL = 'https://x9upj2z4ji.execute-api.eu-central-1.amazonaws.com/cors/feed/podcast';
+  public PREDIGTEN_URL = 'https://x9upj2z4ji.execute-api.eu-central-1.amazonaws.com/cors/feed/podcast';
   constructor(private http: HttpClient) { 
     this.GetRssFeedData(this.PREDIGTEN_URL);
   }
@@ -19,11 +19,13 @@ export class FeedsService {
       observe: "body",
       responseType: "text"
     };
-    this.http
+    console.log("in getrssfeeddata");
+    return this.http
       .get<any>(URL, requestOptions)
       .subscribe(data => {
         let parseString = xml2js.parseString;
         parseString(data, (err, result: NewsRss) => {
+          console.log("In parse String");
           this.RssData = result;
         });
       });

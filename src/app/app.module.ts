@@ -11,6 +11,7 @@ import { FirebaseX } from "@ionic-native/firebase-x/ngx";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChurchapiService } from './connectors/churchapi.service';
+import { FeedsService } from './communications/feeds.service';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { ChurchapiService } from './connectors/churchapi.service';
     ChurchapiService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     HttpClientModule,
+    FeedsService
   ],
   bootstrap: [AppComponent]
 })
