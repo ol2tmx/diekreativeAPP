@@ -1,9 +1,24 @@
 
-.segment-card {
-    overflow-x: scroll;
-    .segment-item {
-        display: inline-block !important;
-        min-width: 100px !important;
-        width: auto !important;
-           }
+ion-tab-bar > {
+
+top: 608px;
+left: 0px;
+width: 375px;
+height: 55px;
+
+ion-tab-button > ion-icon{
+
+top: 622px;
+left: 31px;
+width: 17px;
+height: 15px;
+
+}
+
+ion-tab-button > ion-label {
+top: 643px;
+left: 27px;
+height: 13px;
+}
+
 }
