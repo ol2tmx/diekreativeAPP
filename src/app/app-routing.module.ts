@@ -37,6 +37,10 @@ const routes: Routes = [
   {
     path: 'dummytab',
     loadChildren: () => import('./dummytab/dummytab.module').then( m => m.DummytabPageModule)
+  },
+  {
+    path: 'lifegroups',
+    loadChildren: () => import('./lifegroups/lifegroups.module').then( m => m.LifegroupsPageModule)
   }
 
 
