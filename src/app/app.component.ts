@@ -50,6 +50,10 @@ export class AppComponent {
     this.menu.close('first');
   }
 
+close(){
+  this.menu.close('first');
+}
+
   async presentModal() {
     const modal = await this.modalController.create({
       component: LoginModalPage,
