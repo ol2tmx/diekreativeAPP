@@ -37,7 +37,19 @@ const routes: Routes = [
   {
     path: 'dummytab',
     loadChildren: () => import('./dummytab/dummytab.module').then( m => m.DummytabPageModule)
+  },  {
+    path: 'ueber-uns',
+    loadChildren: () => import('./ueber-uns/ueber-uns.module').then( m => m.UeberUnsPageModule)
+  },
+  {
+    path: 'gottesdienste',
+    loadChildren: () => import('./gottesdienste/gottesdienste.module').then( m => m.GottesdienstePageModule)
+  },
+  {
+    path: 'tagundnacht',
+    loadChildren: () => import('./tagundnacht/tagundnacht.module').then( m => m.TagundnachtPageModule)
   }
+
 
 
 ];
