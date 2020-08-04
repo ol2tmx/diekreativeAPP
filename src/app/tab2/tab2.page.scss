@@ -1,3 +1,29 @@
+.headerimages{
+    top: 96px;
+    left: -5px;
+    width: 380px;
+    height: 209px; 
+
+    position: absolute;
+    /* position: absolute; */
+    /* background: var(--unnamed-color-003d58) 0% 0% no-repeat padding-box; 
+    /*  background: #003D5815 0% 0% no-repeat padding-box; */
+    background: #003D5815  
+    /*border: 1px solid #707070;
+    opacity: 0.15;*/
+    }
+
+    h1 {
+        top: 183px;
+        font-family:Lato, sans-serif;
+        position: absolute;
+        left: 75px;
+        width: 226px;
+        height: 33px;
+    }
+
+   /* .headercaption */
+
 .punkte
 { position: fixed;
     top: 317px;
