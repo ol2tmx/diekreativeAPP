@@ -74,7 +74,44 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** font-family **/
+  --ion-font-family: 'Lato';
 }
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf');
+  font-weight: 200;
+  font-style: normal;}
+
+  @font-face {
+      font-family: 'Lato bold';
+      src: url('../fonts/Lato-Bold.ttf');
+      font-weight: 400;
+      font-style: bold;
+  
+    }
+
+    @font-face {
+      font-family: 'Lato bold italic';
+      src: url('../fonts/Lato-BoldItalic.ttf');
+      font-weight: 400;
+      font-style: bold italic;
+
+
+  
+    }
+
+    @font-face {
+      font-family: 'Lato italic';
+      src: url('../fonts/Lato-Italic.ttf');
+      font-weight: 200;
+      font-style: italic;}
+
+
+
+
 
 @media (prefers-color-scheme: dark) {
   /*
