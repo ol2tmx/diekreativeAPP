@@ -9,41 +9,58 @@ ion-card {
 #erlebt{
     background-size: scale-down;
     object-fit: cover;
-    height:162px;
-    width: 162px
+    height:142px;
+    width: 142px
 }
 
 
   .card-title {
-    position: absolute;
+    position: absolute; 
     top: 36%;
     font-size: 2.0em;
     width: 100%;
     font-weight: bold;
     color: #fff;
+    font: Bold 27px/27px var(--unnamed-font-family-lato);
+    text-align: left;
+    font: Bold 27px/27px Lato;
+letter-spacing: 2.02px;
+text-transform: uppercase;
+
+    
   }
 
   #predigten{
        background-size: scale-down;
     object-fit: cover;
-    height:162px;
-    width: 162px
+    height:142px;
+    width: 142px
 }
 
   .card-title {
-    position: absolute;
-    top: 36%;
     font-size: 2.0em;
+    position: absolute;
+    top: 52%;
     width: 100%;
+    color: white;
     font-weight: bold;
-    color: #fff;
+    font: Bold 27px/27px Lato;
+    letter-spacing: 2.02px;
+    font: var(--unnamed-font-family-lato);
+    text-align: left;
+    font-family: var(--unnamed-font-family-lato);
+    text-align: initial;
+    
+  ;
+    
+  
   }
 
   #überuns{
         background-size: scale-down;
     object-fit: cover;
-    height:162px;
-    width: 162px
+    height:142px;
+    width: 142px
 }
 
   .card-title {
@@ -53,6 +70,7 @@ ion-card {
     width: 100%;
     font-weight: bold;
     color: #fff;
+    
   }
 
   .card-subtitle {
@@ -62,12 +80,17 @@ ion-card {
     width: 100%;
     color: white;
     font-weight: bold;
+    font: Bold 27px/27px Lato;
+    letter-spacing: 2.02px;
+    font: Bold 27px/27px var(--unnamed-font-family-lato);
+    text-align: left;
+    font-family: var(--unnamed-font-family-lato);
   }
   #Tag{
       background-size: scale-down;
     object-fit: cover;
-    height:162px;
-    width: 162px
+    height:142px;
+    width: 142px
 }
 
 
