@@ -14,7 +14,7 @@
     }
 
 .h1 {
-    position: fixed;
+    position: absolute;
     top: 138px;
     left: 30px;
     font-size: 27px;
@@ -24,7 +24,7 @@
 
 
 .h2 {
-    position: fixed;
+    position: absolute;
     top: 168px;
     left: 30px;
     font-size: 20px;
@@ -34,7 +34,7 @@
    /* .headercaption */
 
 .anfahrt_punkte
-{ position: fixed;
+{ position: absolute;
     top: 138px;
     left: 333px;
     width: 56px;
@@ -43,10 +43,14 @@
 }
 
 .anfahrt_pfeil
-{ position: fixed;
+{ position: absolute;
 top: 638px;
 left: -5px;
 width: 55px;
 height: 143px;
 opacity: 1;
+}
+
+.content_anfahrt{
+    top: 700px;
 }
