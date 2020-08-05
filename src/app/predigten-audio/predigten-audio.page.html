@@ -5,8 +5,15 @@
 </ion-header>
 
 <ion-content>
+  <div style="width:100%; height:209px; background-image: url(../assets/headerimages/Header_Unterseiten_MEDIATHEK.jpg); background-size: cover;">
+    <h1 class="lifegroup-title">LIFEGROUPS</h1>
+  </div>
+ <div class="punkte"> <img src="../assets/svg/punkte_yellow.svg" id="kreuze" > </div>
+
+ <div class="pfeil"> <img src="../assets/svg/pfeil_blue_1.svg" id="pfeile" > </div>
+
   <ion-list>
-    <ion-list-header>Predigten</ion-list-header>
+   
     <ion-item *ngFor="let predigt of predigten" routerLink="/predigten-audio-details" [state]="{ data: { predigt:predigt } }">
       <ion-label>
         <h2>{{predigt.title[0]}}</h2>
