@@ -7,12 +7,21 @@ ion-card {
 
 
 #erlebt{
+    background-image: url("/assets/Kachel_Startseite_ELEBT.jpg") no-repeat fixed center;
     background-size: scale-down;
     object-fit: cover;
-    height:142px;
-    width: 142px
+    height:162px;
+    width: 162px
 }
 
+ion-card {
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    margin-right: 10px
+    margin-left 30px
+  
+  }
 
   .card-title {
     position: absolute; 
@@ -31,16 +40,29 @@ text-transform: uppercase;
   }
 
   #predigten{
-       background-size: scale-down;
+    background-image: url("/assets/Kachel_Startseite_MEDIATHEK.jpg") no-repeat fixed center;
+    background-size: scale-down;
     object-fit: cover;
-    height:142px;
-    width: 142px
+    height:162px;
+    width: 162px
 }
+
+ios hydrated {margin: 0px!important;}
+  
+
+ion-card {
+    position: relative;
+    text-align: center;
+    box-shadow: none;
+    margin: 0px;
+    border-radius: 0px;
+    margin-left:  10px;
+  }
 
   .card-title {
     font-size: 2.0em;
     position: absolute;
-    top: 52%;
+    top: 100%;
     width: 100%;
     color: white;
     font-weight: bold;
@@ -50,6 +72,9 @@ text-transform: uppercase;
     text-align: left;
     font-family: var(--unnamed-font-family-lato);
     text-align: initial;
+    line-height: 27px;
+    padding-left: 17px;
+    
     
   ;
     
@@ -57,10 +82,11 @@ text-transform: uppercase;
   }
 
   #überuns{
-        background-size: scale-down;
+    background-image: url("/assets/Kachel_Startseite_UEBER-UNS.jpg") no-repeat fixed center;
+    background-size: scale-down;
     object-fit: cover;
-    height:142px;
-    width: 142px
+    height:162px;
+    width: 162px
 }
 
   .card-title {
@@ -87,10 +113,11 @@ text-transform: uppercase;
     font-family: var(--unnamed-font-family-lato);
   }
   #Tag{
-      background-size: scale-down;
+    background-image: url("/assets/Kachel-Startseite_TAGUNDNACHT.jpg") no-repeat fixed center;
+    background-size: scale-down;
     object-fit: cover;
-    height:142px;
-    width: 142px
+    height:162px;
+    width: 162px
 }
 
 
