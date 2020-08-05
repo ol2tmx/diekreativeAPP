@@ -2,3 +2,9 @@
 ion-slides {
     height: 100%;
   }
+
+  .shadow {
+    -moz-box-shadow:    0px 3px 6px #00000029;
+    -webkit-box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0px 3px 6px #00000029;
+  }

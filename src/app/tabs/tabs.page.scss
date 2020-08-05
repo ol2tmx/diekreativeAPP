@@ -10,15 +10,19 @@ ion-tab-button > ion-icon{
 
 top: 622px;
 left: 31px;
-width: 17px;
-height: 15px;
 
 }
 
 ion-tab-button > ion-label {
-top: 643px;
+top: 633px;
 left: 27px;
-height: 13px;
+margin-top: -10px;
+font-weight: bold;
+//height: 13px;
+}
+
+ion-tab-button.tab-selected {
+    border-top: 3px solid var(--color-selected);;
 }
 
 }
