@@ -1,9 +1,5 @@
 
-ion-card {
-  --background: #d7d8da;
-  position: relative;
-    text-align: center;
-}
+
 
 
 #erlebt{
@@ -18,8 +14,9 @@ ion-card {
     position: relative;
     text-align: center;
     margin: 0px;
-    margin-right: 10px
-    margin-left 30px
+    margin-right: 10px;
+    margin-left: 5px;
+    border-radius: 0px;
   
   }
 
@@ -48,16 +45,7 @@ text-transform: uppercase;
 }
 
 ios hydrated {margin: 0px!important;}
-  
 
-ion-card {
-    position: relative;
-    text-align: center;
-    box-shadow: none;
-    margin: 0px;
-    border-radius: 0px;
-    margin-left:  10px;
-  }
 
   .card-title {
     font-size: 2.0em;

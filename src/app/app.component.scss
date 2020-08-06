@@ -20,19 +20,22 @@
   }
 
   
-ion-menu > ion-content > ion-list > ion-item {
-  border-bottom: 1px solid grey !important;
-  font: SemiBold var(--unnamed-font-size-16)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-source-sans-pro);
+ion-menu > ion-content > ion-list > ion-item > ion-label {
+  //border-bottom: 1px solid grey !important;
+  font: LatoBold var(--unnamed-font-size-16)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-source-sans-pro);
 letter-spacing: var(--unnamed-character-spacing-0);
 color: var(--unnamed-color-777777);
 text-align: left;
-font: SemiBold 16px/22px Source Sans Pro;
+font: LatoBold 16px/22px Lato;
 letter-spacing: 0px;
 color: #777777;
 text-transform: uppercase;
 opacity: 1;
 }
 
+ion-menu > ion-content > ion-list {
+    margin-left:50px;
+}
 
 
 .shadow {
@@ -49,3 +52,14 @@ opacity: 1;
      padding: 0px 0px 0px 22px;
  } 
 
+ .socialmediabar{
+    //position: absolute;
+    bottom: 0;
+     margin-left:50px;
+     height: 90px;
+     border-top: 1px var(--ion-color-secondary);
+ }
+
+ .menuicon{
+     margin:16px;
+ }
